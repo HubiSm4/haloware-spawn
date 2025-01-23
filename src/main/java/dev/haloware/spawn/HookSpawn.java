@@ -3,6 +3,7 @@ package dev.haloware.spawn;
 import dev.haloware.ServerPlugin;
 import dev.haloware.spawn.commands.SpawnCmd;
 import dev.haloware.spawn.configs.SpawnConfig;
+import dev.haloware.spawn.listeners.PlayerJoinListener;
 import dev.haloware.spawn.listeners.TeleportCountdownListener;
 import eu.okaeri.configs.ConfigManager;
 import eu.okaeri.configs.yaml.snakeyaml.YamlSnakeYamlConfigurer;
@@ -16,7 +17,8 @@ public class HookSpawn {
 
     public void listeners() {
         Stream.of(
-                new TeleportCountdownListener()
+                new TeleportCountdownListener(),
+                new PlayerJoinListener()
         ).forEach(listener -> ServerPlugin.getPlugin().getServer().getPluginManager().registerEvents(listener, ServerPlugin.getPlugin()));
     }
 

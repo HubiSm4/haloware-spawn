@@ -12,28 +12,30 @@ public class SpawnConfig extends OkaeriConfig {
     String locationY = "100";
     String locationZ = "0.5";
     String locationYaw = "-180";
-    String locationPitch = "0";
+    String locationPitch = "0\s\s";
+
+    boolean teleportOnJoin = true;
     
     String messagePrefix = "§8› &7";
     String teleportTitle = "&cSPAWN";
     String teleportSubtitle = "&7Pomyślnie przeteleportowano!";
-    String teleportMessage = "&7Pomyślnie przeteleportowano!";
+    String teleportMessage = "&7Pomyślnie przeteleportowano!\s\s";
 
     boolean enableCountdown = true;
     int countdownInterval = 5;
 
-    @Comment({"%countdown%", "remaining time to teleportation"})
+    @Comment({"\s\sPLACEHOLDERS", "%countdown% - remaining time to teleportation"})
     String countdownTitle = "&aTELEPORTACJA";
-    String countdownSubtitle = "&7Zostaniesz przeteleportowany za: &c%countdown%";
+    String countdownSubtitle = "&7Zostaniesz przeteleportowany za: &c%countdown%\s\s";
 
     boolean cancelOnMove = true;
     String cancelOnMoveTitle = "&aTELEPORTACJA";
     String cancelOnMoveSubtitle = "&7Ruszyłeś się, teleportacja anulowana!";
-    String cancelOnMoveMessage = "Ruszyłeś się, teleportacja anulowana!";
+    String cancelOnMoveMessage = "Ruszyłeś się, teleportacja anulowana!\s\s";
 
     boolean cancelOnDamage = true;
     String cancelOnDamageTitle = "&aTELEPORTACJA";
     String cancelOnDamageSubtitle = "&7Otrzymałeś obrażenia, teleportacja anulowana!";
-    String cancelOnDamageMessage = "Otrzymałeś obrażenia, teleportacja anulowana!";
+    String cancelOnDamageMessage = "Otrzymałeś obrażenia, teleportacja anulowana!\s\s";
 
 }
