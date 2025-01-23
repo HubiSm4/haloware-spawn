@@ -54,7 +54,7 @@ public class TeleportCountdownTask extends BukkitRunnable {
     @Override
     public void run() {
         if (count > 0) {
-            player.sendTitle(MessageUtil.fixColors(spawnConfig.getCountdownTitle()), MessageUtil.fixColors(spawnConfig.getCountdownSubtitle().replaceAll("%countdown%", String.valueOf(count))), 1, 10, 1);
+            player.sendTitle(MessageUtil.fixColors(spawnConfig.getCountdownTitle()), MessageUtil.fixColors(spawnConfig.getCountdownSubtitle().replaceAll("%countdown%", String.valueOf(count))));
             count--;
         } else {
             taskCache.invalidate(player.getUniqueId());
