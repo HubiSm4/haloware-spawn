@@ -1,90 +1,9 @@
-name: 'hatopia-template'
+name: 'haloware-spawn'
 version: '${git.commit.id.describe}'
-main: dev.hatopia.ServerPlugin
+main: dev.haloware.ServerPlugin
 api-version: '1.21'
-authors: [heyteek, HubiSm4_]
-website: hatopia.pl
-softdepend: [packetevents, PlaceholderAPI, goxy]
+authors: [ HubiSm4_, heyteek ]
+website: dc.haloware.pl
 
 commands:
-  heal:
-    permission: hatopia.command.heal
-    aliases:
-      - feed
-  invsee:
-    permission: hatopia.command.invsee
-    aliases:
-      - inventorysee
-  endersee:
-    permission: hatopia.command.ecsee
-    aliases:
-      - enderchestsee
-  speed:
-    permission: hatopia.command.speed
-  stp:
-    permission: hatopia.command.stp
-  gamemode:
-    permission: hatopia.command.gamemode
-    aliases:
-      - gm
-  clear:
-    permission: hatopia.command.clear
-  tp:
-    permission: hatopia.command.tp
-  about:
-    permission: hatopia.command.about
-    aliases:
-      - discord
-      - dc
-      - tiktok
-      - tt
-      - www
-      - strona
-      - yt
-      - youtube
-      - namemc
-  message:
-    permission: hatopia.command.message
-    aliases:
-      - msg
-      - wiadomosc
-  response:
-    permission: hatopia.command.response
-    aliases:
-      - r
-      - odpowiedz
-  ignore:
-    permission: hatopia.command.ignore
-    aliases:
-      - ignoruj
-      - zablokuj
-      - block
-  hub:
-    permission: hatopia.command.hub
-    aliases:
-      - lobby
-  check:
-    permission: hatopia.command.check
-    aliases:
-      - sprawdz
-  confess:
-    permission: hatopia.command.confess
-    aliases:
-      - przyznajesie
-  adminchat:
-    permission: hatopia.command.adminchat
-    aliases:
-      - ac
-  helpop:
-    permission: hatopia.command.helpop
-    aliases:
-      - report
-      - zglos
-  re-load:
-    permission: hatopia.command.re-load
-  re-start:
-    permission: hatopia.command.re-start
-  vanish:
-    permission: hatopia.command.vanish
-    aliases:
-      - v
+  spawn:
