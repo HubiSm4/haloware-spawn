@@ -1,5 +1,6 @@
 package dev.haloware;
 
+import dev.haloware.metrics.Metrics;
 import dev.haloware.spawn.HookSpawn;
 import dev.haloware.spawn.configs.SpawnConfig;
 import lombok.Getter;
@@ -30,6 +31,9 @@ public class ServerPlugin extends JavaPlugin {
         HookSpawn hookSpawn = new HookSpawn();
         hookSpawn.commands();
         hookSpawn.listeners();
+
+        int pluginId = 24593;
+        new Metrics(this, pluginId);
     }
 
     @Override
